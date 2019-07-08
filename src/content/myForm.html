@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>podstrona</title>
+   <link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+
+<body>
+   <header>
+      <a class="myHref" href="index.html">Strona główna</a>
+   </header>
+
+   <main class="mainForm">
+      <!-- <h1>Wypełnij ankietę</h1> -->
+
+      <form action="https://dev.cotenfrontend.pl" method="POST" clas="myForm">
+
+         <!-- <p>
+            <label for="name"> Name: </label>
+            <input required name="name" value="Darek" placeholder="your name:" id="name">
+         </p>
+         <p>
+            <label for="riddle"> Surname:
+               <input required name="riddle" value="cotenfrontend" placeholder="podaj coten" id="riddle">
+            </label>
+         </p> -->
+
+         <p>
+            <label for="id_name"> Imię: </label>
+            <input required name="first_Name" value="Darek" placeholder="podaj imię" id="id_name">
+         </p>
+         <p>
+            <label for="id_nazwisko"> Nazwisko:
+               <input required name="last_name" value="" placeholder="podaj nazwisko" id="id_nazwisko">
+            </label>
+         </p>
+
+         <p>
+            <label for="id_age"> Wiek: </label>
+            <input type="number" name="age" value="35" id="id_age">
+         </p>
+
+         <p>
+            <label for="id_tel"> Tel: </label>
+            <input type="tel" pattern="(?<!\w)(\(?(\+|00)?48\)?)?[ -]?\d{3}[ -]?\d{3}[ -]?\d{3}(?!\w)" name="phone"
+               value="" id="id_tel">
+         </p>
+
+         <p>
+            <label for="id_mail"> e_mail: </label>
+            <input type="email" name="e_mail" value="" id="id_mail">
+         </p>
+
+         <fieldset>
+            <legend>Twój ulubiony system opercyjny</legend>
+            <p>
+               <input type="radio" name="whatOS" value="WIN" id="id_radio1">
+               <label for="id_radio1"> Windows </label>
+            </p>
+            <p>
+               <input type="radio" name="whatOS" value="LINUX" id="id_radio2">
+               <label for="id_radio2"> Linux </label>
+            </p>
+            <p>
+               <input type="radio" name="whatOS" value="MacOS" id="id_radio3">
+               <label for="id_radio3"> MacOS </label>
+            </p>
+         </fieldset>
+
+         <p>
+            <input type="checkbox" name="whoAreYou" value="FrontEnd" id="id_youare1">
+            <label for="id_youare1"> Frondend Dev. </label>
+         </p>
+         <p>
+            <input type="checkbox" name="whoAreYou" value="Java/C#" id="id_youare2">
+            <label for="id_youare2"> Java/C# </label>
+         </p>
+         <p>
+            <input type="checkbox" name="whoAreYou" value="Python" id="id_youare3">
+            <label for="id_youare3"> Python </label>
+         </p>
+
+         <p>
+            <label for="id_pass"> podaj hasło: </label>
+            <input type="password" name="pass" value="" id="id_pass">
+         </p>
+
+         <p>
+            <label for="id_select">Wybierz opcję</label>
+            <select name="select" id="id_select">
+               <option value="wybrano Tak">TAK</option>
+               <option value="wybrano Nie">NIE</option>
+               <option value="wybrano Nie wiem">NIE WIEM</option>
+            </select>
+         </p>
+
+         <p>
+            <input type="submit" value="Wyślij">
+         </p>
+
+      </form>
+
+
+   </main>
+
+   <footer>
+      <a class="myHref" href="index.html">Powrót do strony głównej</a>
+      <h4>Strona domowa Darka R.</h4>
+      <a class="myHref" href="https://validator.w3.org/nu/#textarea"> Tu walidowane </a>
+   </footer>
+</body>
+
+</html>

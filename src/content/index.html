@@ -1,15 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/main.css" type="text/css">
 </head>
+
 <body>
-  <h1>Hello world! from gulp on mac</h1>
-  
-  <script src="js/main.js"></script>
+   <header class="site-header">
+      <nav class="navigation">
+         <ul class="navigation__list">
+            <li class="navigation__item">
+               <a class="navigation__link navigation__link--bigger" href="index.html">*** Strona główna *** </a>
+            </li>
+            <li class="navigation__item">
+               <a class="navigation__link" href="day1.html">Dzień 1 </a>
+            </li>
+            <li class="navigation__item">
+               <a class="navigation__link" href="day2.html"> 2 </a>
+            </li>
+            <li class="navigation__item">
+               <a class="navigation__link" href="day3.html"> 3 </a>
+            </li>
+            <li class="navigation__item">
+               <a class="navigation__link" href="day4.html"> 4 </a>
+            </li>
+            <li class="navigation__item">
+               <a class="navigation__link" href="day5.html"> 5 </a>
+            </li>
+            <li class="navigation__item">
+               <a class="navigation__link navigation__link--bigger" href="myLinks.html"> Przydatne linki </a>
+            </li>
+            <li class="navigation__item">
+               <a class="navigation__link navigation__link--bigger" href="myForm.html"> Formularz kontaktowy </a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <main id="top" class="main">
+      <section class="about">
+
+         <!-- <div class="box">co tent frontend</div> -->
+
+         <header>
+            <h1>
+               Strona domowa
+            </h1>
+         </header>
+
+
+         <h2>Kim jestem</h2>
+         <p>
+            tutaj będzie opis kim jestem i czym się zajmuję
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit cum reiciendis labore
+            ipsa, cupiditate asperiores quae quidem in repellendus, magnam dolores! Aut nihil quibusdam, fugiat
+            voluptatem sunt soluta ea.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo repellat atque eius voluptatum
+            aspernatur sapiente porro quaerat quisquam necessitatibus nulla illum consequatur, consectetur quasi fugiat
+            molestiae ut laborum earum.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo veritatis aut iusto dolores hic quas
+            non iure vel? Cum ea illo dolore maxime eveniet animi id autem, natus cupiditate.
+            <br>
+            Lorem ipsum dolor sit amet.
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt fuga maxime obcaecati temporibus maiores
+            mollitia, molestiae ullam cumque, distinctio placeat quo ex a praesentium commodi!
+            <br>
+            <a href="#pamietniczek">Przejdź do pamiętniczka</a>
+         </p>
+      </section>
+
+      <section id="pamietniczek">
+         <h2>Pamiętniczek - opis kolejnych zadań</h2>
+         <h3>Jak stworzyć prawidłowego HTML'a</h3>
+         <p>
+            Tutaj opis jak to się robi
+            <br>
+            <a class="myHref" href="podstrona.html">Przejdź do artykułu z opisem</a>
+         </p>
+
+         <h3>Czy nagrywanie szkolenia to prosta sprawa</h3>
+         <p>
+            Kilka przemyśleń na temat tworzenia szkoleń
+         </p>
+
+         <h3> zarządzanie taskami</h3>
+         <p class="main__section-zarzadzanie">
+            Tablice kanban na podstawie programu Trello
+         </p>
+
+      </section>
+      <footer>
+         <h4>Strona domowa Darka R.</h4>
+         <a class="myHref" href="https://validator.w3.org/nu/#textarea"> Tu walidowane </a>
+         <a class="myHref" href="#top" class="top">Na górę</a>
+      </footer>
+   </main>
+   <script src="../js/main.js"></script>
 </body>
+
 </html>
