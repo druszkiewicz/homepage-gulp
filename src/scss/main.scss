@@ -120,6 +120,10 @@ p {
    display: flex;
    justify-content: center;
    align-items: baseline;
+   // display: grid;
+   // grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 2fr;
+   // grid-template-areas: "l c1 c2 c3 c4 c5 r1 r2";
+   // height: 300px;
 }
 
 
@@ -136,6 +140,7 @@ p {
    // flex-grow: 1;
    font-size: 1.2rem;
    font-family: "Roboto";
+   height: 250px;
 
 
 }
