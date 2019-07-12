@@ -1,4 +1,4 @@
-**strona szkolenia frontend'u, w którym biorę udział, **
+**strona szkolenia frontend'u, w którym biorę udział,**
 
 **a tu link do strony: [szkolenie WTF](https://druszkiewicz.github.io/homepage-gulp/)**
 
