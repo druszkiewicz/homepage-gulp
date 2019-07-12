@@ -16,3 +16,8 @@ console.log('nazywam się ' + name + ' i to nie jest ' +
    isHappy + '-> stary sposób');
 
 console.log(name[0], name[1]);
+
+const homeFooter = document.querySelector('.homePageFooter--js');
+console.log(homeFooter);
+homeFooter.innerHTML = 'nazywam się ' + name + ' i to nie jest ' +
+   isHappy + '-> stary sposób';
