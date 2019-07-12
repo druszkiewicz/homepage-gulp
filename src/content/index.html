@@ -12,13 +12,13 @@
 </head>
 
 <body>
-   <header class="site-header">
-      <nav class="navigation">
+   <!-- <header class="site-header"> -->
+   <!-- <nav class="navigation">
          <ul class="navigation__list">
 
-            <!-- <li>
+            <li>
                <img class="logo" src="assets/favicon.ico" alt="logo">
-            </li> -->
+            </li>
             <li class="navigation__item">
                <a class="navigation__link navigation__link--bigger" href="index.html">Strona główna</a>
             </li>
@@ -45,7 +45,17 @@
                <a class="navigation__link navigation__link--smaller" href="myForm.html">Kontakt</a>
             </li>
          </ul>
+      </nav> -->
+
+   <!-- nav lekcja -->
+   <header class="site-header">
+      <nav class="navigation">
+         <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a> </li>
+            <li class="navigation__item"><a class="navigation__link" href="day1.html">Dzień pierwszy</a></li>
+         </ul>
       </nav>
+
    </header>
 
    <main id="top" class="main">
@@ -124,6 +134,20 @@
             mollitia, molestiae ullam cumque, distinctio placeat quo ex a praesentium commodi!
             <br>
             <a class="myHref" href="podstrona.html">Przejdź do artykułu z opisem</a>
+            <section class="hobby">
+               <ul class="hobby__list">
+                  <li>programowanie</li>
+                  <li>jazda na rowerze</li>
+                  <li>czytanie</li>
+               </ul>
+            </section>
+            <section class="plan">
+               <ol class="plan__list">
+                  <li>otwórz plik</li>
+                  <li>zmień coś</li>
+                  <li>zapisz</li>
+               </ol>
+            </section>
          </p>
 
          <h3>Czy nagrywanie szkolenia to prosta sprawa</h3>
@@ -137,12 +161,26 @@
          </p>
 
       </section>
-      <footer>
-         <h4 class="homePageFooter--js">Strona domowa Darka R.</h4>
-         <a class="myHref" href="https://validator.w3.org/nu/#textarea"> Tu walidowane </a>
-         <a class="myHref" href="#top" class="top">Na górę</a>
-      </footer>
+
+      <section class="glossary">
+         <dt>CSS</dt>
+         <dd>to co widzisz</dd>
+         <dt>HTML</dt>
+         <dd>treść + szkielet strony</dd>
+         <dt>JavaScript</dt>
+         <dt>ES6</dt>
+         <dd>to co teraz jest na tapecie</dd>
+
+      </section>
+
    </main>
+
+   <footer>
+      <h4 class="homePageFooter--js">Strona domowa Darka R.</h4>
+      <a class="myHref" href="https://validator.w3.org/nu/#textarea"> Tu walidowane </a>
+      <a class="myHref" href="#top" class="top">Na górę</a>
+   </footer>
+
    <script src="js/main.js"></script>
 </body>
 
