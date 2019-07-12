@@ -317,6 +317,22 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.navigation__item {
+  display: inline; }
+
+.navigation__link {
+  text-decoration: none;
+  color: #1A936F; }
+
 h1 {
   font-size: 3rem;
   color: tomato; }
@@ -368,7 +384,6 @@ h4 {
   right: 10px;
   text-decoration: none; }
 
-/* ------------- */
 .navigation__link--bigger {
   font-family: "Ubuntu";
   font-size: 2.5rem;
@@ -439,21 +454,5 @@ h4 {
   position: fixed;
   top: 0;
   width: 100%; }
-
-.navigation__list {
-  list-style: none;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.navigation__item {
-  display: inline; }
-
-.navigation__link {
-  text-decoration: none;
-  color: #1A936F; }
 
 /*# sourceMappingURL=main.css.map */
