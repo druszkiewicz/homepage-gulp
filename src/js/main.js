@@ -75,3 +75,10 @@ const calculateFat = (x, y) => {
 };
 
 console.log(calculateFat(3, 4));
+
+const witaj = (name, age) => {
+   console.log(`witaj ${name}, masz ${age} lat`);
+}
+
+witaj('darek', 55);
+witaj(name, age);

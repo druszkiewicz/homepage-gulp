@@ -12,6 +12,11 @@ html {
    box-sizing: inherit;
 }
 
+body {
+   background: rgb(211,224,224);
+   background: linear-gradient(180deg, rgba(211,224,224,1) 0%, rgba(235,217,178,1) 100%);
+}
+
 // navigation
 
 .navigation {}
@@ -20,11 +25,14 @@ html {
    list-style: none;
    padding: 0;
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
+   align-items: center;
 }
 
 .navigation__item {
-   display: inline; //elementy obok siebie
+   display: inline; //elementy obok siebie (bez flexa)
+   display: block;  //dla flexa
+   margin: 0 16px;
 }
 
 .navigation__link {
@@ -139,7 +147,7 @@ p {
 
 .main {
    width: 100%;
-   max-width: 700px;
+   max-width: 800px;
    margin: 32px auto;
    padding-top: 50px;
 }
