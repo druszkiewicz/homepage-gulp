@@ -46,7 +46,26 @@ body {
    background-origin: border-box;
    background-repeat: no-repeat;
    height: 400px;
+   position: relative;
+}
 
+.kwadrat {
+   background: rgba(23, 29, 29, 0.493);
+   width: 200px;
+   height: 150px;
+   color: white;
+   position: absolute;
+   right: 100px;
+   bottom: 0px;
+   padding: 16px;
+}
+.kwadrat__h5 {
+   padding:0;
+   color: tomato;
+   margin: 0;
+}
+.kwadrat__contekst {
+   margin: 0;
 }
 
 h1 {
