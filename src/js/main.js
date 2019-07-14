@@ -95,21 +95,27 @@ function handleClick() {
 // button.addEventListener('click', handleClick);  //sama nazwa funkcji bez nawiasów
 let klik = 0;
 
-const header_new = document.querySelector('.header__tittle--js').innerHTML;
+const header_new = document.querySelector('.header__title--js').innerHTML;
 //console.log(header_new);
 
 button.addEventListener('click', (e) => {  //e - event, moze być ee itp.
    // console.log(e);
    // console.log(e.target);
    // console.log('hello arrow');
-   const header = document.querySelector('.header__tittle--js');
+   const header = document.querySelector('.header__title--js');
    //console.log(klik);
 
    if (klik==0) {
-    //  console.log(klik);
       klik=1;
       header.innerHTML = 'klik klik';
-    //  console.log(klik);
+      // header.classList.add('header__title--red');
+       header.classList.toggle('header__title--red');
+      if (header.classList.contains('header__title--red')) {
+         console.log('jest klasa');
+      }
+      else {
+         console.log('niema klasy');
+      }
    }
    else {
       klik=0;
@@ -119,3 +125,15 @@ button.addEventListener('click', (e) => {  //e - event, moze być ee itp.
    //alert('ooo....');
 
 });
+
+const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+navigationSwitcher.addEventListener('click', (e) => {
+   const navigationList = document.querySelector('.navigation__list--js');
+   navigationList.classList.toggle('navigation__list--visible');
+   if (navigationList.classList.contains('navigation__list--visible')){
+      navigationSwitcher.innerHTML = '−';
+   }
+   else {
+      navigationSwitcher.innerHTML = '≡';
+   }
+})

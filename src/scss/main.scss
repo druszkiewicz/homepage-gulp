@@ -87,11 +87,11 @@ body {
    }
 }
 
-h1 {
-   font-size: 3rem;
-   color: tomato;
-   text-align: center;
-}
+// h1 {
+//    font-size: 3rem;
+//    color: tomato;
+//    text-align: center;
+// }
 
 h2 {
    background-color: #cccccc;
@@ -207,6 +207,16 @@ p {
    }
 }
 
+.header__title {
+   font-size: 3rem;
+   color: tomato;
+   text-align: center;
+}
+
+.header__title--red {
+   color: darkred;
+}
+
 .myLinks {
    background: rgb(237, 238, 183);
 }
@@ -256,4 +266,31 @@ p {
 
 .homePageFooter {
    text-align: center;
+}
+
+@media (min-width: 730px) {
+   .navigation__switcher {
+      display: none;
+   }
+}
+
+@media (max-width: 730px) {
+   .navigation__list {
+      display: none;
+      flex-direction: column;
+   }
+   .navigation__list--visible {
+      display: flex;
+   }
+
+   .site-header {
+      min-height: 48px;
+   }
+   .navigation__switcher {
+      border: solid 1px;
+      background: none;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+   }
 }
