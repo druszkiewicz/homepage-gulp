@@ -18,7 +18,7 @@ console.log(name[0], name[1]);
 
 const homeFooter = document.querySelector('.homePageFooter--js');
 console.log(homeFooter);
-homeFooter.innerHTML = 'nazywam się ' + name + ' i to nie jest ' + isHappy + '-> stary sposób';
+//homeFooter.innerHTML = 'nazywam się ' + name + ' i to nie jest ' + isHappy + '-> stary sposób';
 
 if ('javascript' != 'java') {
    console.log('to prawda');

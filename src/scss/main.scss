@@ -40,6 +40,15 @@ body {
    color: #1A936F;
 }
 
+.site-header-scr {
+   background-image: url("../assets/wind-farm.jpg");
+   background-position: center;
+   background-origin: border-box;
+   background-repeat: no-repeat;
+   height: 400px;
+
+}
+
 h1 {
    font-size: 3rem;
    color: tomato;
@@ -148,8 +157,8 @@ p {
 .main {
    width: 100%;
    max-width: 800px;
-   margin: 32px auto;
-   padding-top: 50px;
+   margin: 0px auto;
+   padding-top: 16px;
 }
 
 .myLinks {
@@ -199,3 +208,6 @@ p {
    width: 100%;
 }
 
+.homePageFooter {
+   text-align: center;
+}
