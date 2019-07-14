@@ -317,21 +317,41 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+body {
+  background: #d3e0e0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d3e0e0), to(#ebd9b2));
+  background: -webkit-linear-gradient(top, #d3e0e0 0%, #ebd9b2 100%);
+  background: -o-linear-gradient(top, #d3e0e0 0%, #ebd9b2 100%);
+  background: linear-gradient(180deg, #d3e0e0 0%, #ebd9b2 100%); }
+
 .navigation__list {
   list-style: none;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .navigation__item {
-  display: inline; }
+  display: inline;
+  display: block;
+  margin: 0 16px; }
 
 .navigation__link {
   text-decoration: none;
   color: #1A936F; }
+
+.site-header-scr {
+  background-image: url("../assets/wind-farm.jpg");
+  background-position: center;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  height: 400px; }
 
 h1 {
   font-size: 3rem;
@@ -413,9 +433,9 @@ h4 {
 
 .main {
   width: 100%;
-  max-width: 700px;
-  margin: 32px auto;
-  padding-top: 50px; }
+  max-width: 800px;
+  margin: 0px auto;
+  padding-top: 16px; }
 
 .myLinks {
   background: #edeeb7; }
@@ -454,5 +474,8 @@ h4 {
   position: fixed;
   top: 0;
   width: 100%; }
+
+.homePageFooter {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
