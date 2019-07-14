@@ -390,11 +390,6 @@ body {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr; } }
 
-h1 {
-  font-size: 3rem;
-  color: tomato;
-  text-align: center; }
-
 h2 {
   background-color: #cccccc;
   color: white; }
@@ -479,6 +474,14 @@ h4 {
   .main {
     max-width: 600px; } }
 
+.header__title {
+  font-size: 3rem;
+  color: tomato;
+  text-align: center; }
+
+.header__title--red {
+  color: darkred; }
+
 .myLinks {
   background: #edeeb7; }
 
@@ -519,5 +522,29 @@ h4 {
 
 .homePageFooter {
   text-align: center; }
+
+@media (min-width: 730px) {
+  .navigation__switcher {
+    display: none; } }
+
+@media (max-width: 730px) {
+  .navigation__list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .navigation__list--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .site-header {
+    min-height: 48px; }
+  .navigation__switcher {
+    border: solid 1px;
+    background: none;
+    position: absolute;
+    right: 16px;
+    top: 16px; } }
 
 /*# sourceMappingURL=main.css.map */

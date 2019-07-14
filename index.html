@@ -17,7 +17,7 @@
    <!-- nav lekcja-->
    <header class="site-header">
       <nav class="navigation">
-         <ul class="navigation__list">
+         <ul class="navigation__list navigation__list--js">
             <li class="navigation__item"><a class="navigation__link navigation__link--smaller" href="index.html">Strona główna</a> </li>
             <li class="navigation__item"><a class="navigation__link" href="day1.html">Poniedziałek</a></li>
             <li class="navigation__item"><a class="navigation__link" href="day2.html">Wtorek</a></li>
@@ -28,6 +28,7 @@
             <li class="navigation__item"><a class="navigation__link navigation__link--smaller" href="myForm.html">Kontakt</a></li>
          </ul>
       </nav>
+      <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">≡</button>
 
    </header>
    <div class="site-header-scr">
@@ -46,11 +47,12 @@
    </div>
 
    <main id="top" class="main">
-         <header>
-               <h1>
+         <header class="header">
+               <h1 class="header__title header__title--js">
                   Strona domowa kursanta WTF node, gulp i git
                </h1>
-            </header>
+               <button class="header__botton header__button--js">zmień treść nagłówka</button>
+         </header>
 
       
       <section class="sectionAllign about">
