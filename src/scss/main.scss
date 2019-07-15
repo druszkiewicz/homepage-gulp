@@ -311,6 +311,10 @@ p {
    border: 3px solid red;
 }
 
+input:focus {
+   outline:none;
+}
+
 @media (min-width: 730px) {
    .navigation__switcher {
       display: none;
