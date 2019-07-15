@@ -349,6 +349,12 @@ body {
   text-decoration: none;
   color: #1A936F; }
 
+.navigation__link:hover {
+  color: hotpink; }
+
+.site-header:hover {
+  background: black; }
+
 .site-header-scr {
   background-image: url("../assets/wind-farm.jpg");
   background-position: center;
@@ -397,8 +403,26 @@ h2 {
   background-color: #cccccc;
   color: white; }
 
-h3 {
+.subHeader {
   color: brown; }
+
+.subHeader::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: yellow;
+  margin-right: 5px; }
+
+.subHeader::after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #8277e0;
+  margin-left: 5px; }
 
 h4 {
   /*  background-color: aqua; */
@@ -525,6 +549,9 @@ h4 {
 
 .homePageFooter {
   text-align: center; }
+
+.myFirstName:focus {
+  border: 3px solid red; }
 
 @media (min-width: 730px) {
   .navigation__switcher {
