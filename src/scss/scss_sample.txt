@@ -1,0 +1,83 @@
+$myFavoriteGray: #ccc;
+$desktop: 1024px;
+$tablet: 768px;
+
+@mixin borderBackground {
+  border-radius: 10px;
+  background: hotpink;
+}
+
+@mixin borderBackgroundParameter ($radiu, $backgro) {
+  border-radius: $radiu;
+  background: $backgro;
+}
+
+.font-style {
+  font-size: 13px;
+  color: green;
+}
+
+@mixin font-style2 {
+  font-size: 13px;
+  color: green;
+}
+
+.main {
+  color: $myFavoriteGray;
+  @include borderBackgroundParameter (20px, red);
+  //@extend .font-style;
+  @include font-style2;
+}
+
+.main::before {
+  font-size: 20px;
+  content: 'hi';
+  @include borderBackground;
+}
+
+.paragraf {
+  color: $myFavoriteGray;
+  @extend .font-style;
+}
+
+@media (min-width: $desktop) {
+  .main {
+    color: red;
+  }
+}
+
+//-----------------------
+
+.about {
+  color:red;
+}
+
+.about__title {
+  font-size: 20px;
+}
+
+.about__title--smaller {
+ font-size: 16px; 
+}
+
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 18px;
+  }
+}
+
+.about-sass {
+  color: red;
+  &__title {
+    font-size:20px;
+    &--smaller {
+      font-size: 16px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }  
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }  
+  }
+}
