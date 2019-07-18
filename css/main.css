@@ -339,6 +339,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 730px) {
+    .navigation__list--visible {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  @media (max-width: 730px) {
+    .navigation__list {
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .navigation__item {
   display: inline;
@@ -348,9 +360,25 @@ body {
 .navigation__link {
   text-decoration: none;
   color: #1A936F; }
+  .navigation__link--bigger {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold; }
+  .navigation__link--smaller {
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: bold; }
 
 .navigation__link:hover {
   color: hotpink; }
+
+@media (max-width: 730px) {
+  .navigation__switcher {
+    border: solid 1px;
+    background: none;
+    position: absolute;
+    right: 16px;
+    top: 16px; } }
 
 .site-header:hover {
   background: black; }
@@ -377,14 +405,12 @@ body {
   right: 100px;
   bottom: 0px;
   padding: 16px; }
-
-.kwadrat__h5 {
-  padding: 0;
-  color: tomato;
-  margin: 0; }
-
-.kwadrat__contekst {
-  margin: 0; }
+  .kwadrat__h5 {
+    padding: 0;
+    color: tomato;
+    margin: 0; }
+  .kwadrat__contekst {
+    margin: 0; }
 
 .contentGrid {
   display: -ms-grid;
@@ -405,24 +431,22 @@ h2 {
 
 .subHeader {
   color: brown; }
-
-.subHeader::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: yellow;
-  margin-right: 5px; }
-
-.subHeader::after {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #8277e0;
-  margin-left: 5px; }
+  .subHeader::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: yellow;
+    margin-right: 5px; }
+  .subHeader::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #8277e0;
+    margin-left: 5px; }
 
 h4 {
   /*  background-color: aqua; */
@@ -430,17 +454,11 @@ h4 {
 
 .linkTable {
   border-spacing: 15px; }
-
-.linkTable__td {
-  border: 1px solid black;
-  padding: 5px; }
-
-.linkTable__th {
-  background-color: white; }
-
-.main__section-zarzadzanie {
-  text-align: center;
-  color: #9ABD97; }
+  .linkTable__td {
+    border: 1px solid black;
+    padding: 5px; }
+  .linkTable__th {
+    background-color: white; }
 
 .about {
   /* position: relative; */ }
@@ -464,16 +482,6 @@ h4 {
   right: 10px;
   text-decoration: none; }
 
-.navigation__link--bigger {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold; }
-
-.navigation__link--smaller {
-  font-family: "Ubuntu";
-  font-size: 1.5rem;
-  font-weight: bold; }
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,30 +492,30 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.menu__item {
-  color: bisque;
-  padding: 0 16px;
-  margin: 0 8px;
-  text-decoration: none; }
+  .menu__item {
+    color: bisque;
+    padding: 0 16px;
+    margin: 0 8px;
+    text-decoration: none; }
 
 .main {
   width: 100%;
   max-width: 1024px;
   margin: 0px auto;
   padding-top: 16px; }
-
-@media (max-width: 900) {
-  .main {
-    max-width: 600px; } }
+  .main__section-zarzadzanie {
+    text-align: center;
+    color: #9ABD97; }
+  @media (max-width: 900) {
+    .main {
+      max-width: 600px; } }
 
 .header__title {
   font-size: 3rem;
   color: tomato;
   text-align: center; }
-
-.header__title--red {
-  color: darkred; }
+  .header__title__title--red {
+    color: darkred; }
 
 .myLinks {
   background: #edeeb7; }
@@ -553,28 +561,15 @@ h4 {
 .myFirstName:focus {
   border: 3px solid red; }
 
+input:focus {
+  outline: none; }
+
 @media (min-width: 730px) {
   .navigation__switcher {
     display: none; } }
 
 @media (max-width: 730px) {
-  .navigation__list {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .navigation__list--visible {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
   .site-header {
-    min-height: 48px; }
-  .navigation__switcher {
-    border: solid 1px;
-    background: none;
-    position: absolute;
-    right: 16px;
-    top: 16px; } }
+    min-height: 48px; } }
 
 /*# sourceMappingURL=main.css.map */
