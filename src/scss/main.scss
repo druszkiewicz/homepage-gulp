@@ -23,31 +23,6 @@ body {
 
 // navigation
 
-// .navigation {}
-
-// .navigation__list {
-//    list-style: none;
-//    padding: 0;
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-// }
-
-// .navigation__item {
-//    display: inline; //elementy obok siebie (bez flexa)
-//    display: block;  //dla flexa
-//    margin: 0 16px;
-// }
-
-// .navigation__link {
-//    text-decoration: none;
-//    color: #1A936F;
-// }
-
-// .navigation__link:hover {
-//    color: hotpink;
-// }
-
 .navigation {
    &__list {
       list-style: none;
@@ -55,6 +30,18 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &--visible {
+         @media (max-width: 730px) {
+            display: flex;
+         }
+      }
+
+      @media (max-width: 730px) {
+         display: none;
+         flex-direction: column;
+      }
+
    }
 
    &__item {
@@ -66,34 +53,58 @@ body {
    &__link {
       text-decoration: none;
       color: #1A936F;
+
+      &--bigger {
+         font-family: "Ubuntu";
+         font-size: 2.5rem;
+         font-weight: bold;
+      }
+
+      &--smaller {
+         font-family: "Ubuntu";
+         font-size: 1.5rem;
+         font-weight: bold;
+      }
+
    }
 
    &__link:hover {
       color: hotpink;
    }
+
+
+   &__switcher {
+      @media (max-width: 730px) {
+         border: solid 1px;
+         background: none;
+         position: absolute;
+         right: 16px;
+         top: 16px;
+      }
+   }
 }
 
 
+.site-header {
+   &:hover {
+      background: black;
+   }
 
-.site-header {}
-
-.site-header:hover {
-   background: black;
+   &-scr {
+      background-image: url("../assets/wind-farm.jpg");
+      background-position: center;
+      background-origin: border-box;
+      background-repeat: no-repeat;
+      height: 400px;
+      max-width: 1024px;
+      margin: 92px auto 0;
+      width: 100%;
+      margin-top: 92px;
+      position: relative;
+      z-index: -1;
+   }
 }
 
-.site-header-scr {
-   background-image: url("../assets/wind-farm.jpg");
-   background-position: center;
-   background-origin: border-box;
-   background-repeat: no-repeat;
-   height: 400px;
-   max-width: 1024px;
-   margin: 92px auto 0;
-   width: 100%;
-   margin-top: 92px;
-   position: relative;
-   z-index: -1;
-}
 
 .kwadrat {
    background: rgba(23, 29, 29, 0.493);
@@ -104,17 +115,18 @@ body {
    right: 100px;
    bottom: 0px;
    padding: 16px;
+
+   &__h5 {
+      padding: 0;
+      color: tomato;
+      margin: 0;
+   }
+
+   &__contekst {
+      margin: 0;
+   }
 }
 
-.kwadrat__h5 {
-   padding: 0;
-   color: tomato;
-   margin: 0;
-}
-
-.kwadrat__contekst {
-   margin: 0;
-}
 
 .contentGrid {
    display: grid;
@@ -142,27 +154,29 @@ h2 {
 
 .subHeader {
    color: brown;
+
+   &::before {
+      content: ''; //musi  być nawet pusty
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: yellow;
+      margin-right: 5px;
+   }
+
+   &::after {
+      content: ''; //musi  być nawet pusty
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgb(130, 119, 224);
+      margin-left: 5px;
+   }
+
 }
 
-.subHeader::before {
-   content: ''; //musi  być nawet pusty
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   border-radius: 50%;
-   background: yellow;
-   margin-right: 5px;
-}
-
-.subHeader::after {
-   content: ''; //musi  być nawet pusty
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   border-radius: 50%;
-   background: rgb(130, 119, 224);
-   margin-left: 5px;
-}
 
 h4 {
    /*  background-color: aqua; */
@@ -176,20 +190,20 @@ p {
 
 .linkTable {
    border-spacing: 15px;
+
+   &__td {
+      border: 1px solid black;
+      padding: 5px;
+   }
+
+   &__th {
+      background-color: white;
+   }
 }
 
 .linkTable__td {
    border: 1px solid black;
    padding: 5px;
-}
-
-.linkTable__th {
-   background-color: white;
-}
-
-.main__section-zarzadzanie {
-   text-align: center;
-   color: #9ABD97;
 }
 
 .about {
@@ -220,39 +234,19 @@ p {
 }
 
 
-.navigation__link--bigger {
-   // flex-grow: 2;
-   // flex-shrink: 2;
-   // flex-wrap: nowrap;
-   font-family: "Ubuntu";
-   font-size: 2.5rem;
-   font-weight: bold;
-}
-
-.navigation__link--smaller {
-   // flex-grow: 2;
-   // flex-shrink: 2;
-   // flex-wrap: nowrap;
-   font-family: "Ubuntu";
-   font-size: 1.5rem;
-   font-weight: bold;
-}
-
-
 
 .menu {
    display: flex;
    justify-content: center;
    align-items: center;
 
-}
-
-.menu__item {
-   // background-color: rgb(184, 105, 105);
-   color: bisque;
-   padding: 0 16px;
-   margin: 0 8px;
-   text-decoration: none;
+   &__item {
+      // background-color: rgb(184, 105, 105);
+      color: bisque;
+      padding: 0 16px;
+      margin: 0 8px;
+      text-decoration: none;
+   }
 }
 
 
@@ -261,25 +255,36 @@ p {
    max-width: 1024px;
    margin: 0px auto;
    padding-top: 16px;
-}
 
-@media (max-width: 900) {
+   &__section-zarzadzanie {
+      text-align: center;
+      color: #9ABD97;
+   }
 
-   //brake point
-   .main {
+   @media (max-width: 900) {
       max-width: 600px;
    }
 }
+
+// @media (max-width: 900) {
+
+//    //brake point
+//    .main {
+//       max-width: 600px;
+//    }
+// }
 
 .header__title {
    font-size: 3rem;
    color: tomato;
    text-align: center;
+
+   &__title--red {
+      color: darkred;
+   }
 }
 
-.header__title--red {
-   color: darkred;
-}
+
 
 .myLinks {
    background: rgb(237, 238, 183);
@@ -349,24 +354,8 @@ input:focus {
 }
 
 @media (max-width: 730px) {
-   .navigation__list {
-      display: none;
-      flex-direction: column;
-   }
-
-   .navigation__list--visible {
-      display: flex;
-   }
 
    .site-header {
       min-height: 48px;
-   }
-
-   .navigation__switcher {
-      border: solid 1px;
-      background: none;
-      position: absolute;
-      right: 16px;
-      top: 16px;
    }
 }
